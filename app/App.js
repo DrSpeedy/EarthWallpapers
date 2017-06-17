@@ -10,7 +10,7 @@ class App {
         MicroEvent.mixin(Ticker);
 
         this._data = require('./resources/imageIds').ids;
-        this._ticker = new Ticker(5000);
+        this._ticker = new Ticker(3 * 60 * 1000);
     }
 
     getRandomId(data) {

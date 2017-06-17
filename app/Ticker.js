@@ -1,6 +1,6 @@
 
 class Ticker {
-    constructor(interval = 5 * 60 * 60000) {
+    constructor(interval = 1000) {
         let self = this;
         setInterval(() => {
             self.trigger('tick', new Date());
